@@ -10,11 +10,7 @@ namespace CMP1903M_A01_2223
     {
         static void Main(string[] args)
         {
-            //  //Create Pack class
-            // var pack = new Pack();
-            //  //Get List of cards
-            //  var cards = pack.GetPack();
-
+            
             //Create Pack class
             var pack = new Pack();
             //Get List of cards
@@ -25,6 +21,7 @@ namespace CMP1903M_A01_2223
             Console.WriteLine("Would you like to deal one card or multiple?");
             Console.WriteLine("1) One Card");
             Console.WriteLine("2) Multiple Cards");
+            //Ensures integer value
             int UserChoice = int.Parse(Console.ReadLine());
             if (UserChoice == 1)
             //Deals one card using Deal Method
