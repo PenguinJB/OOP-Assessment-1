@@ -11,18 +11,19 @@ namespace CMP1903M_A01_2223
         //Base for the Card class.
 
         //Suits in enums
-        public enum CardSuit { Hearts, Diamonds, Clubs, Spades }
+        public enum CardSuit { Hearts = 1, Diamonds, Clubs, Spades }
 
 
 
 
         //Values in enums
-        public enum CardValue { Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King }
+        public enum CardValue { Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King }
 
 
         //Getting and Setting Values
         public CardValue Value { get; set; }
         public CardSuit Suit { get; set; }
+
 
 
         //Method Which creates a card having two values, Value and Suit
@@ -31,9 +32,11 @@ namespace CMP1903M_A01_2223
             Value = _value;
             Suit = _suit;
 
-            
-            
+
+
         }
+
+
 
         public override string ToString()
         {

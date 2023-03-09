@@ -16,11 +16,14 @@ namespace CMP1903M_A01_2223
         {
             pack = new List<Card>();
             foreach (Card.CardSuit suit in Enum.GetValues(typeof(Card.CardSuit)))
+            
             {
                 foreach (Card.CardValue value in Enum.GetValues(typeof(Card.CardValue)))
+                
                 {
 
                     Card card = new Card(value, suit);
+                    
                     pack.Add(card);
                     
                 }
@@ -28,7 +31,7 @@ namespace CMP1903M_A01_2223
         }
 
        
-        public static List<Card> GetPack(List<Card> pack)
+        public List<Card> GetPack()
         {
             return pack;
         }
@@ -53,6 +56,7 @@ namespace CMP1903M_A01_2223
                         int x = random.Next(0, length + 1);
                         (pack[x], pack[length]) = (pack[length], pack[x]);
                     }
+                    
                     return true;
                 }
 
